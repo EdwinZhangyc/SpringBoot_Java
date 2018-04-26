@@ -7,6 +7,17 @@ public class Contact {
     private String phoneNumber;
     private String emailAddress;
 
+    public Contact() {
+    }
+
+    public Contact(Long id, String firstName, String lastName, String phoneNumber, String emailAddress) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.emailAddress = emailAddress;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }

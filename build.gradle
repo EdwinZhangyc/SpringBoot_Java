@@ -14,9 +14,15 @@ buildscript {
 }
 apply plugin: 'java'
 apply plugin: 'spring-boot'//使用Spring Boot插件
+apply plugin: 'war'//使用WAR插件，进行打war包，默认打成jar包
 
 //构建JAR文件
-jar{
+//jar{
+//    baseName = 'contacts'
+//    version = '0.1.0'
+//}
+//构建为war包，要添加war插件apply plugin: 'war'
+war{
     baseName = 'contacts'
     version = '0.1.0'
 }

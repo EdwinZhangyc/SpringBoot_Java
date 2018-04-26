@@ -21,3 +21,18 @@
                 1、视图解析器
                 2、模板解析器
                 3、模板引擎
+        21.2.3 添加静态内容
+            在采用Spring Boot的Web自动配置来定义Spring MVC bean时，这些bean中会包含一个resource handler，
+            它会将“/**”映射到几个资源路径中这些资源路径包括（相对于类路径的根）：
+                /META-INF/resources/
+                /resources/
+                /static/
+                /public/
+        21.2.4 持久化数据（Persistence Data）
+        21.2.5 尝试运行
+            添加一个启动类
+            使用命令：gradle build  或 maven package 进行打包
+            可以使用jar包同时也可以使用war包的形式
+            使用命令：java -jar build/libs/contacts-0.1.0.jar或java -jar build/libs/contacts-0.1.0.war进行启动，如果是maven的话，则在target文件夹下
+    21.3 组合使用Groovy与Spring Boot CLI
+        该节内容放到另外一个项目中
