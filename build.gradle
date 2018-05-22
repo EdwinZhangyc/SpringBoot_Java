@@ -41,6 +41,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.thymeleaf:thymeleaf-spring4")
     compile("com.h2database:h2")
+    //使用Actuator进行了解应用内部运行状况
+    compile("org.springframework.boot:spring-boot-starter-actuator")
 }
 
 task wrapper(type: Wrapper) {
